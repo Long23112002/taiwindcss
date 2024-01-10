@@ -1,0 +1,15 @@
+Bước 1 đứng ở thư mục gốc tạo package.json
+ - npm init -y
+bước 2 cài đặt tailwind và vite
+ - npm install -D tailwindcss postcss autoprefixer vite
+bước 3 cấu hình hình lại trong package.json
+ - "scripts": {
+    "dev": "vite"
+  },
+bước 4 chạy npx tailwindcss init -p
+bước 5 tạo thư mục css/tailwind.css 
+ - @tailwind base;
+ - @tailwind components;
+ - @tailwind utilities;
+bước 6 chạy câu lệnh build ra file css của tailwind
+ - npx tailwindcss-cli build css/tailwind.css -o build/tailwind.css
